@@ -11,24 +11,62 @@
     <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
     <title>Shitty Game Idea Generator by csgregorian</title>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+
+    <style type="text/css">
+    * {
+      text-align: center;
+      margin-left: auto;
+      margin-right: auto;
+      margin-bottom: 0;
+      display: border-box;
+      padding: 10;
+    }
+
+    button {
+      font-size: 1.5rem;
+    }
+
+    h1 {
+      font-size: 5rem;
+      line-height: 6rem;
+      font-family: "Helvetica Neue", "Helvetica", "Avenir Next", "Open Sans", sans-serif;
+    }
+
+
+    </style>
+
+    
   </head>
 
   <body>
+  
+
     <div id="container">
       <div class="inner">
 
         <header>
           <h1>Shitty Game Idea Generator</h1>
-          <h2></h2>
         </header>
 
         <section id="main_content">
-          <h3>Press the button to generate a shitty game idea!</h3>
+          <h2>Press the button to generate a shitty game idea!</h3>
 
           <button>Generate!</button>
+          <header>
+          <h1 id="idea" style="display: none">Text-based Tetris.</h1>
+          </header>
         </section>
 
       </div>
     </div>
+
+    <script type="text/javascript">
+    $("button").click(function(event) {
+      $("#idea").show();
+      console.log("TEXTRIS");
+    });
+    </script>
   </body>
 </html>
